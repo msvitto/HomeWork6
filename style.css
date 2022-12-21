@@ -1,0 +1,47 @@
+body , td{
+    align-items: center;
+}
+.topic{
+    border: 2px inset black;
+    border-collapse:collapse ;
+    width: 1100px;
+}
+
+
+#identifier{
+    color: rgb(156, 18, 18);
+}
+div, span{
+    color: rgba(96, 240, 0, 0.952);
+}
+.text{
+    color: aqua;
+}
+.tegline{
+    color: rgb(185, 114, 114);
+}
+
+.link{
+    color: blue;
+}
+.title{
+    color: blueviolet;
+}
+p{
+    color: rgb(188, 201, 13);
+}
+
+.parent div{
+    color: rgb(22, 228, 243);
+}
+.parent1 > div{
+    color: rgb(216, 33, 161);
+}
+
+.parent2 + div{
+    color: rgb(19, 23, 236);
+}
+h1~h2{
+    color:brown;
+}
+

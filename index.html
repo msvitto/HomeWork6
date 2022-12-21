@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <table class="topic"border="1" >
+        <caption>виды селекторов</caption>
+        <thead>
+        <tr>
+            <th>вид</th>
+            <th>пример</th>
+            <th>значение</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>универсальный селектор</td>
+                <td>*{ <br>
+                    color:red; <br> }</td>
+                <td>применяеться к любому элементу </td>
+            </tr>
+            <tr>
+                <td>сектор по id</td>
+                <td>#heading{<br>
+                    color:red; <br>}</td>
+                <td>применяеться к индивидуальному элементу у которого есть этот id</td>
+            </tr>
+            <tr>
+                <td>селектор по class</td>
+                <td>.title{<br>
+                    color:red; <br>}</td>
+                <td>выбирает элемент, у которого есть атрибут class с указаним значением</td>
+            </tr>
+            <tr>
+                <td>селектор по названию тега</td>
+                <td>h1{<br>
+                    color:red; <br>}</td>
+                <td>примениться ко всем указаным элементам на странице (пример h1)</td>
+            </tr>
+            <tr>
+                <td>несколько селекторов</td>
+                <td>h1, a, p{<br>
+                    color:red; <br>}</td>
+                <td>указывает свойства стилей для всех выбраных селекторов </td>
+            </tr>
+            <tr>
+                <td>селектор по атрибуту</td>
+                <td>[href="#"]{<br>
+                    color:red; <br>}</td>
+                <td>применится ко всем элементам с таким атрибутом</td>
+            </tr>
+            <tr>
+                <td>селекторы потомков/контексткые селекторы</td>
+                <td>.wraping p{<br>
+                    color:red; <br>}</td>
+                <td>примениться ко всем дочерним элементам всех уровней</td>
+            </tr>
+            <tr>
+                <td>селекторы дочерние</td>
+                <td>.wraping>p{<br>
+                    color:red; <br>}</td>
+                <td>применяеться к первому уровню дочерних элементов</td>
+            </tr>
+            <tr>
+                <td>селекторы сестринские/соседние.смежные</td>
+                <td>h1+p{<br>
+                    color:red; <br>}</td>
+                <td>примениться к последнему указанному в селекторе элементу</td>
+            </tr>
+            <tr>
+                <td>селекторы сестринские/соседние.смежные</td>
+                <td>h1~p{<br>
+                    color:red; <br>}</td>
+                <td>примениться ко всем следующим элементам, не только к первому элементу</td>
+            </tr>
+            <tr>
+                <td>селекторы псевдоклассов</td>
+                <td>a:hover{<br>
+                    color:red; <br>}</td>
+                <td>они описывают состояние элементов при совершение над ними действия (клик по елементу)</td>
+            </tr>
+            <tr>
+                <td>селекторы псевдоэлементов</td>
+                <td>p::first-letter{<br>
+                    color:red; <br>}</td>
+                <td>они для добавления элементов на страницу без отображения их в HTML-разметке</td>
+            </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table> <br><br>
+    <div id="identifier">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, soluta?</div>
+    <br>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, soluta?</div>
+    <br>
+    <span>Lorem ipsum dolor sit amet.</span>
+    <br>
+    <br>
+    <a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, soluta?</a>
+    <br><br>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, soluta?</div>
+    <br>
+    <div class="text">5Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, soluta?</div>
+    <br>
+    <h4 class="tegline link">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, doloremque!</h4>
+
+    <div class="title">Lorem ipsum dolor sit 
+         <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, soluta? 
+         </div> amet consectetur, adipisicing elit. Iusto, soluta?</div>
+    <br><br>
+    <div>Lorem ipsum dolor sit 
+         <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, soluta? 
+         </div> amet consectetur, adipisicing elit. Iusto, soluta?</div>
+    <br><br>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing1 
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, soluta?
+        </div>
+    </p>
+    <br><br>
+    <div>Lorem ipsum dolor sit amet 
+        <p>Lorem, ipsum.</p> 1consectetur, adipisicing elit. Adipisci, atque.
+    </div>
+    <br><br>
+
+    <div class="parent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, soluta?
+        <div>Lorem ipsum dolor sit amet.<div> dolor sit amet consectetur, adipisicing elit. Iusto, soluta? <div>Lorem, ipsum.</div> </div></div>
+        <div>Lorem ipsum dolor sit amet.<div>Lorem ipsum dolor sit amet consectetur adipisicing elit.<div>Lorem, ipsum.</div></div> </div>
+    </div>
+    <br>
+
+    <div class="parent1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, soluta?
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, soluta? <div>Lorem, ipsum dolor.</div> </div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, cumque. <div>Lorem, ipsum dolor.</div> </div>
+    </div>
+    <br>
+    <div class="parent2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, soluta? </div>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, soluta?</div>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, soluta?</div>
+   
+      <br>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+
+    
+</body>
+</html>
